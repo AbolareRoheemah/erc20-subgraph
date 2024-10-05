@@ -1,6 +1,8 @@
-type ExampleEntity @entity {
-  id: Bytes!
-  count: BigInt!
-  _owner: Bytes! # address
-  _spender: Bytes! # address
+type TransferEntity @entity {
+  id: ID!
+  _from: Bytes!
+  _to: Bytes!
+  value: BigInt!
+  timestamp: BigInt!
+  transactionHash: Bytes!
 }
